@@ -30,6 +30,7 @@ const Login = () => {
           }}
         >
           <Text>me</Text>
+          <Text>O</Text>
         </View>
       </View>
     </SafeAreaView>
