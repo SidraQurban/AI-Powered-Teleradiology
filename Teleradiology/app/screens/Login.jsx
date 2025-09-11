@@ -33,12 +33,6 @@ const Login = () => {
           <Text>O</Text>
           <Text>O</Text>
           <Text>O</Text>
-          <View
-            style={{
-              height: responsiveHeight(100),
-              backgroundColor: "#f8f9fa",
-            }}
-          ></View>
         </View>
       </View>
     </SafeAreaView>
