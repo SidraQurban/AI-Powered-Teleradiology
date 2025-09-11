@@ -1,11 +1,13 @@
 import { View, Text } from "react-native";
 import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
 
+const Stack = createNativeStackNavigator();
 const AppNavigation = () => {
   return (
-    <View>
-      <Text>AppNavigation</Text>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator></Stack.Navigator>
+    </NavigationContainer>
   );
 };
 
