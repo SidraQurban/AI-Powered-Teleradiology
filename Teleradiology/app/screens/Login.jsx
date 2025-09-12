@@ -45,7 +45,6 @@ const Login = () => {
             >
               TeleRadiology login now!
             </Text>
-            
           </View>
           <View>
             <View style={{ marginTop: responsiveHeight(4) }}>
