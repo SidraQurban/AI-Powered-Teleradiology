@@ -17,7 +17,7 @@ const WelcomeScreen = () => {
           backgroundColor: "#f8f9fa",
         }}
       >
-        {" "}
+        {" 
         <View
           style={{
             marginTop: responsiveHeight(70),
