@@ -1,5 +1,5 @@
 import { View, Text, TouchableOpacity } from "react-native";
-import React from "reac
+import React from "re
 import { SafeAreaView } from "react-native-safe-area-context";
 import {
   responsiveFontSize,
