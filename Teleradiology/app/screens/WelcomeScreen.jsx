@@ -8,11 +8,13 @@ import {
 import { useNavigation } from "@react-navigation/native";
 
 const WelcomeScreen = () => {
+  const 
   const navigation = useNavigation();
   return (
     <SafeAreaView>
       <View
         style={{
+
           height: responsiveHeight(100),
           backgroundColor: "#f8f9fa",
         }}
