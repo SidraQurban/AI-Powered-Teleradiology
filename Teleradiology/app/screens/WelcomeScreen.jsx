@@ -8,7 +8,7 @@ import {
 import { useNavigation } from "@react-navigation/native";
 
 const WelcomeScreen = () => {
-  const stac
+  const sta
   const navigation = useNavigation();
   return (
     <SafeAreaView>
