@@ -6,7 +6,6 @@ import {
   responsiveWidth,
 } from "react-native-responsive-dimensions";
 import { useNavigation } from "@react-navigation/native";
-
 const WelcomeScreen = () => {
   const navigation = useNavigation();
   return (
