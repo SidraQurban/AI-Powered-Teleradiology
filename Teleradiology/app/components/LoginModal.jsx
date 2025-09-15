@@ -1,4 +1,4 @@
-import { View, Text } from "react-native";
+import { View, Text, TextInput } from "react-native";
 import React from "react";
 import {
   responsiveFontSize,
@@ -32,7 +32,7 @@ const LoginModal = () => {
         <View>
           <View style={{ marginTop: responsiveHeight(4) }}>
             <Text style={{ fontSize: responsiveFontSize(2) }}>Email</Text>
-            <TextInput
+            {/* <TextInput
               placeholder="abc@gmail.com"
               style={{
                 borderWidth: 1,
@@ -40,7 +40,7 @@ const LoginModal = () => {
                 borderRadius: responsiveHeight(1),
                 marginHorizontal: responsiveHeight(2),
               }}
-            />
+            /> */}
           </View>
         </View>
       </View>
