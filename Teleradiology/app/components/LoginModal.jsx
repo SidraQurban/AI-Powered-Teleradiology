@@ -30,15 +30,30 @@ const LoginModal = () => {
           </Text>
         </View>
         <View style={{ marginHorizontal: responsiveHeight(2) }}>
+          {/* Email */}
           <View style={{ marginTop: responsiveHeight(4) }}>
-            <Text style={{ fontSize: responsiveFontSize(2) }}>Email</Text>
+            <Text style={{ fontSize: responsiveFontSize(1.8) }}>Email</Text>
             <TextInput
               placeholder="abc@gmail.com"
               style={{
                 marginTop: responsiveHeight(1),
                 borderWidth: 1,
                 borderColor: "#ced4da",
-                borderRadius: responsiveHeight(1),
+                borderRadius: responsiveHeight(2),
+                paddingLeft: responsiveHeight(2),
+              }}
+            />
+          </View>
+          {/* Password */}
+          <View style={{ marginTop: responsiveHeight(4) }}>
+            <Text style={{ fontSize: responsiveFontSize(1.8) }}>Password</Text>
+            <TextInput
+              style={{
+                marginTop: responsiveHeight(1),
+                borderWidth: 1,
+                borderColor: "#ced4da",
+                borderRadius: responsiveHeight(2),
+                paddingLeft: responsiveHeight(2),
               }}
             />
           </View>
