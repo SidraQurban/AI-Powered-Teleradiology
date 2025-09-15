@@ -12,7 +12,7 @@ const Login = () => {
       <View
         style={{
           height: responsiveHeight(100),
-          backgroundColor: "#adb5bd",
+          backgroundColor: "#ced4da",
         }}
       >
         <View
