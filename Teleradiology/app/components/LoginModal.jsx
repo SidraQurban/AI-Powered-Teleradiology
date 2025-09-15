@@ -56,7 +56,7 @@ const LoginModal = () => {
                 paddingLeft: responsiveHeight(2),
               }}
             />
-            <TouchableOpacity></TouchableOpacity>
+            <TouchableOpacity>{/* icons */}</TouchableOpacity>
           </View>
         </View>
       </View>
