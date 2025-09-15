@@ -29,16 +29,16 @@ const LoginModal = () => {
             TeleRadiology login now!
           </Text>
         </View>
-        <View>
+        <View style={{ marginHorizontal: responsiveHeight(2) }}>
           <View style={{ marginTop: responsiveHeight(4) }}>
             <Text style={{ fontSize: responsiveFontSize(2) }}>Email</Text>
             <TextInput
               placeholder="abc@gmail.com"
               style={{
+                marginTop: responsiveHeight(1),
                 borderWidth: 1,
                 borderColor: "#ced4da",
                 borderRadius: responsiveHeight(1),
-                marginHorizontal: responsiveHeight(2),
               }}
             />
           </View>
