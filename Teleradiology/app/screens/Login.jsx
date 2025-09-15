@@ -25,7 +25,7 @@ const Login = () => {
         </View>
         <View
           style={{
-            marginTop: responsiveHeight(13),
+            marginTop: responsiveHeight(15.6),
             backgroundColor: "white",
             height: responsiveHeight(75),
             borderRadius: responsiveHeight(5),
