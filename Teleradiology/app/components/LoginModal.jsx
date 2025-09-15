@@ -32,7 +32,7 @@ const LoginModal = () => {
         <View>
           <View style={{ marginTop: responsiveHeight(4) }}>
             <Text style={{ fontSize: responsiveFontSize(2) }}>Email</Text>
-            {/* <TextInput
+            <TextInput
               placeholder="abc@gmail.com"
               style={{
                 borderWidth: 1,
@@ -40,7 +40,7 @@ const LoginModal = () => {
                 borderRadius: responsiveHeight(1),
                 marginHorizontal: responsiveHeight(2),
               }}
-            /> */}
+            />
           </View>
         </View>
       </View>
