@@ -1,4 +1,4 @@
-import { View, Text, TextInput } from "react-native";
+import { View, Text, TextInput, TouchableOpacity } from "react-native";
 import React from "react";
 import {
   responsiveFontSize,
@@ -56,6 +56,7 @@ const LoginModal = () => {
                 paddingLeft: responsiveHeight(2),
               }}
             />
+            <TouchableOpacity></TouchableOpacity>
           </View>
         </View>
       </View>
