@@ -7,10 +7,12 @@ import {
 } from "react-native-responsive-dimensions";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import { Image } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 const SignUpModal = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [check, setCheck] = useState(false);
+  const navigation = useNavigation();
 
   return (
     <View>
