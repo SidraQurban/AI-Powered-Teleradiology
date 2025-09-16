@@ -227,7 +227,7 @@ const SignUpModal = () => {
                   />
                 </TouchableOpacity>
                 <TouchableOpacity
-                  onPress={() => navigation.navigate("PhoneAuth")}
+                  onPress={() => navigation.navigate("PhoneSignup")}
                   style={{
                     backgroundColor: "#e9ecef",
                     borderRadius: responsiveHeight(2),
