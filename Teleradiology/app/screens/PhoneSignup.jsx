@@ -2,11 +2,12 @@ import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { responsiveHeight } from "react-native-responsive-dimensions";
-import SignUpModal from "../components/SignUpModal";
 import { useNavigation } from "@react-navigation/native";
 import { Ionicons } from "@expo/vector-icons";
+import PhoneSignupModal from "../components/PhoneSignupModal";
 
 const PhoneSignup = () => {
+  const navigation = useNavigation();
   return (
     <SafeAreaView>
       <View
@@ -42,7 +43,7 @@ const PhoneSignup = () => {
         >
           <Text>LOGO</Text>
         </View>
-        <SignUpModal />
+        <PhoneSignupModal />
       </View>
     </SafeAreaView>
   );
