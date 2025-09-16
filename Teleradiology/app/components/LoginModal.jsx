@@ -5,10 +5,12 @@ import {
   responsiveHeight,
   responsiveWidth,
 } from "react-native-responsive-dimensions";
-import { Ionicons, MaterialDesignIcons } from "react-native-vector-icons";
+// import { Ionicons } from "react-native-vector-icons";
+import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 
 const LoginModal = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const [check, setCheck] = useState(false);
   return (
     <View>
       <View
@@ -48,6 +50,8 @@ const LoginModal = () => {
                 borderColor: "#ced4da",
                 borderRadius: responsiveHeight(2),
                 paddingLeft: responsiveHeight(2),
+                backgroundColor: "#e9ecef",
+                height: responsiveHeight(5),
               }}
             />
           </View>
@@ -67,6 +71,8 @@ const LoginModal = () => {
                 borderColor: "#ced4da",
                 borderRadius: responsiveHeight(2),
                 paddingLeft: responsiveHeight(2),
+                backgroundColor: "#e9ecef",
+                height: responsiveHeight(5),
               }}
             />
             <TouchableOpacity
@@ -89,19 +95,22 @@ const LoginModal = () => {
             <View
               style={{
                 flexDirection: "row",
-                marginTop: responsiveHeight(2),
+                marginTop: responsiveHeight(2.2),
                 justifyContent: "space-between",
               }}
             >
-              <TouchableOpacity>
-                <MaterialDesignIcons
-                  name="checkbox-blank-outline"
-                  size={24}
-                  color="black"
+              <TouchableOpacity onPress={() => setCheck(!check)}>
+                <MaterialCommunityIcons
+                  name={check ? "checkbox-marked" : "checkbox-blank-outline"}
+                  size={20}
+                  color="#e9ecef"
                 />
               </TouchableOpacity>
-
-              <Text>Remember me</Text>
+              <Text
+                style={{ color: "#adb5bd", marginRight: responsiveWidth(25) }}
+              >
+                Remember me
+              </Text>
               <Text>Forgot Password?</Text>
             </View>
           </View>
