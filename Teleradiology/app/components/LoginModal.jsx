@@ -51,14 +51,14 @@ const LoginModal = () => {
                 borderRadius: responsiveHeight(2),
                 paddingLeft: responsiveHeight(2),
                 backgroundColor: "#e9ecef",
-                height: responsiveHeight(5),
+                height: responsiveHeight(5.5),
               }}
             />
           </View>
           {/* Password */}
           <View style={{ marginTop: responsiveHeight(2.5) }}>
             <Text
-              style={{ fontSize: responsiveFontSize(1.8), fontWeight: "bold" }}
+              style={{ fontSize: responsiveFontSize(1.7), fontWeight: "bold" }}
             >
               Password
             </Text>
@@ -72,20 +72,20 @@ const LoginModal = () => {
                 borderRadius: responsiveHeight(2),
                 paddingLeft: responsiveHeight(2),
                 backgroundColor: "#e9ecef",
-                height: responsiveHeight(5),
+                height: responsiveHeight(5.5),
               }}
             />
             <TouchableOpacity
               onPress={() => setShowPassword(!showPassword)}
               style={{
-                position: "relative",
+                position: "absolute",
                 marginLeft: responsiveWidth(73),
-                marginTop: responsiveHeight(-3.8),
+                marginTop: responsiveHeight(5.8),
               }}
             >
               <Ionicons
                 name={showPassword ? "eye" : "eye-off"}
-                size={24}
+                size={20}
                 color="black"
               />
             </TouchableOpacity>
@@ -94,25 +94,18 @@ const LoginModal = () => {
           <View>
             <View
               style={{
-                flexDirection: "row",
                 marginTop: responsiveHeight(2.2),
-                justifyContent: "space-between",
               }}
             >
-              <TouchableOpacity onPress={() => setCheck(!check)}>
-                <MaterialCommunityIcons
-                  name={check ? "checkbox-marked" : "checkbox-blank-outline"}
-                  size={20}
-                  color="#e9ecef"
-                />
-              </TouchableOpacity>
-              <Text
-                style={{ color: "#adb5bd", marginRight: responsiveWidth(25) }}
-              >
-                Remember me
-              </Text>
               <TouchableOpacity>
-                <Text style={{ color: "#468faf" }}>Forgot Password?</Text>
+                <Text
+                  style={{
+                    color: "#468faf",
+                    fontSize: responsiveFontSize(1.5),
+                  }}
+                >
+                  Forgot Password?
+                </Text>
               </TouchableOpacity>
             </View>
             {/* login btn */}
@@ -139,8 +132,8 @@ const LoginModal = () => {
               </TouchableOpacity>
             </View>
             {/* sign in with */}
-            <View>
-              <View>
+            <View style={{ marginTop: responsiveHeight(10) }}>
+              <View style={{ alignItems: "center" }}>
                 <Text>Or Sign in with</Text>
               </View>
             </View>
