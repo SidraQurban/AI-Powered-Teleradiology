@@ -8,6 +8,7 @@ import {
 // import { Ionicons } from "react-native-vector-icons";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
+import { Image } from "react-native";
 
 const LoginModal = () => {
   const navigation = useNavigation();
@@ -146,9 +147,54 @@ const LoginModal = () => {
               </TouchableOpacity>
             </View>
             {/* sign in with */}
-            <View style={{ marginTop: responsiveHeight(10) }}>
-              <View style={{ alignItems: "center" }}>
+            <View>
+              <View
+                style={{ alignItems: "center", marginTop: responsiveHeight(5) }}
+              >
                 <Text>Or Sign in with</Text>
+              </View>
+              <View
+                style={{
+                  flexDirection: "row",
+                  justifyContent: "center",
+                }}
+              >
+                <TouchableOpacity
+                  style={{
+                    backgroundColor: "white",
+                    borderRadius: responsiveHeight(2),
+                    padding: responsiveWidth(0.8),
+                    marginHorizontal: responsiveWidth(2),
+                    width: responsiveHeight(6),
+                    height: responsiveHeight(6),
+                    alignItems: "center",
+                    justifyContent: "center",
+                    elevation: 3,
+                    shadowColor: "#000", //ios shadow
+                    shadowOffset: { width: 0, height: 2 },
+                    shadowOpacity: 0.1,
+                    shadowRadius: 2,
+                  }}
+                >
+                  <Image
+                    source={require("../../assets/facebook.png")}
+                    style={{
+                      height: responsiveHeight(4),
+                      width: responsiveHeight(4),
+                      resizeMode: "contain",
+                    }}
+                  />
+                </TouchableOpacity>
+                <TouchableOpacity>
+                  <Image
+                    source={require("../../assets/google.png")}
+                    style={{
+                      resizeMode: "center",
+                      height: responsiveHeight(14),
+                      width: responsiveWidth(10),
+                    }}
+                  />
+                </TouchableOpacity>
               </View>
             </View>
           </View>
