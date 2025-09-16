@@ -6,6 +6,7 @@ import {
   responsiveWidth,
 } from "react-native-responsive-dimensions";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
+import { Image } from "react-native";
 
 const SignUpModal = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -132,6 +133,124 @@ const SignUpModal = () => {
               >
                 Terms of Service
               </Text>
+            </View>
+            {/* login btn */}
+            <View
+              style={{ alignItems: "center", marginTop: responsiveHeight(4) }}
+            >
+              <TouchableOpacity
+                style={{
+                  padding: responsiveHeight(1.5),
+                  paddingHorizontal: responsiveWidth(30),
+                  backgroundColor: "#00b4d8",
+                  borderRadius: responsiveWidth(5.5),
+                }}
+              >
+                <Text
+                  style={{
+                    fontSize: responsiveFontSize(2),
+                    fontWeight: "bold",
+                    color: "white",
+                  }}
+                >
+                  Sign Up
+                </Text>
+              </TouchableOpacity>
+            </View>
+            {/* sign in with */}
+            <View>
+              <View
+                style={{ alignItems: "center", marginTop: responsiveHeight(5) }}
+              >
+                <Text>Or Sign in with</Text>
+              </View>
+              <View
+                style={{
+                  flexDirection: "row",
+                  justifyContent: "center",
+                  marginTop: responsiveHeight(2),
+                }}
+              >
+                <TouchableOpacity
+                  style={{
+                    backgroundColor: "#e9ecef",
+                    borderRadius: responsiveHeight(2),
+                    padding: responsiveWidth(0.8),
+                    marginHorizontal: responsiveWidth(2),
+                    width: responsiveHeight(6),
+                    height: responsiveHeight(6),
+                    alignItems: "center",
+                    justifyContent: "center",
+                    elevation: 3,
+                    shadowColor: "#000", //ios shadow
+                    shadowOffset: { width: 0, height: 2 },
+                    shadowOpacity: 0.1,
+                    shadowRadius: 2,
+                  }}
+                >
+                  <Image
+                    source={require("../../assets/facebook.png")}
+                    style={{
+                      height: responsiveHeight(5.2),
+                      width: responsiveHeight(5.2),
+                      resizeMode: "contain",
+                      marginTop: responsiveHeight(0.5),
+                    }}
+                  />
+                </TouchableOpacity>
+                <TouchableOpacity
+                  style={{
+                    backgroundColor: "#e9ecef",
+                    borderRadius: responsiveHeight(2),
+                    padding: responsiveWidth(0.8),
+                    marginHorizontal: responsiveWidth(2),
+                    width: responsiveHeight(6),
+                    height: responsiveHeight(6),
+                    alignItems: "center",
+                    justifyContent: "center",
+                    elevation: 3,
+                    shadowColor: "#000", //ios shadow
+                    shadowOffset: { width: 0, height: 2 },
+                    shadowOpacity: 0.1,
+                    shadowRadius: 2,
+                  }}
+                >
+                  <Image
+                    source={require("../../assets/google.png")}
+                    style={{
+                      resizeMode: "center",
+                      height: responsiveHeight(6),
+                      width: responsiveWidth(6),
+                    }}
+                  />
+                </TouchableOpacity>
+                <TouchableOpacity
+                  style={{
+                    backgroundColor: "#e9ecef",
+                    borderRadius: responsiveHeight(2),
+                    padding: responsiveWidth(0.8),
+                    marginHorizontal: responsiveWidth(2),
+                    width: responsiveHeight(6),
+                    height: responsiveHeight(6),
+                    alignItems: "center",
+                    justifyContent: "center",
+                    elevation: 3,
+                    shadowColor: "#000", //ios shadow
+                    shadowOffset: { width: 0, height: 2 },
+                    shadowOpacity: 0.1,
+                    shadowRadius: 2,
+                  }}
+                >
+                  <Image
+                    source={require("../../assets/phone.png")}
+                    style={{
+                      height: responsiveHeight(4),
+                      width: responsiveHeight(4),
+                      resizeMode: "contain",
+                    }}
+                  />
+                </TouchableOpacity>
+              </View>
             </View>
           </View>
         </View>

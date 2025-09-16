@@ -212,6 +212,32 @@ const LoginModal = () => {
                     }}
                   />
                 </TouchableOpacity>
+                <TouchableOpacity
+                  style={{
+                    backgroundColor: "#e9ecef",
+                    borderRadius: responsiveHeight(2),
+                    padding: responsiveWidth(0.8),
+                    marginHorizontal: responsiveWidth(2),
+                    width: responsiveHeight(6),
+                    height: responsiveHeight(6),
+                    alignItems: "center",
+                    justifyContent: "center",
+                    elevation: 3,
+                    shadowColor: "#000", //ios shadow
+                    shadowOffset: { width: 0, height: 2 },
+                    shadowOpacity: 0.1,
+                    shadowRadius: 2,
+                  }}
+                >
+                  <Image
+                    source={require("../../assets/phone.png")}
+                    style={{
+                      height: responsiveHeight(4),
+                      width: responsiveHeight(4),
+                      resizeMode: "contain",
+                    }}
+                  />
+                </TouchableOpacity>
               </View>
             </View>
           </View>
