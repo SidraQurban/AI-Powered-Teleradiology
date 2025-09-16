@@ -7,8 +7,10 @@ import {
 } from "react-native-responsive-dimensions";
 // import { Ionicons } from "react-native-vector-icons";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 const LoginModal = () => {
+  const navigation = useNavigation();
   const [showPassword, setShowPassword] = useState(false);
   const [check, setCheck] = useState(false);
   return (
