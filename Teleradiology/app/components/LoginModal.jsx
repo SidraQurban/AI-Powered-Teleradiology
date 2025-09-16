@@ -115,6 +115,7 @@ const LoginModal = () => {
                 <Text style={{ color: "#468faf" }}>Forgot Password?</Text>
               </TouchableOpacity>
             </View>
+            {/* login btn */}
           </View>
         </View>
       </View>
