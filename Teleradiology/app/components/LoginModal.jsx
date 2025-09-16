@@ -157,6 +157,7 @@ const LoginModal = () => {
                 style={{
                   flexDirection: "row",
                   justifyContent: "center",
+                  marginTop: responsiveHeight(2),
                 }}
               >
                 <TouchableOpacity
@@ -179,19 +180,35 @@ const LoginModal = () => {
                   <Image
                     source={require("../../assets/facebook.png")}
                     style={{
-                      height: responsiveHeight(4),
-                      width: responsiveHeight(4),
+                      height: responsiveHeight(5),
+                      width: responsiveHeight(5),
                       resizeMode: "contain",
                     }}
                   />
                 </TouchableOpacity>
-                <TouchableOpacity>
+                <TouchableOpacity
+                  style={{
+                    backgroundColor: "white",
+                    borderRadius: responsiveHeight(2),
+                    padding: responsiveWidth(0.8),
+                    marginHorizontal: responsiveWidth(2),
+                    width: responsiveHeight(6),
+                    height: responsiveHeight(6),
+                    alignItems: "center",
+                    justifyContent: "center",
+                    elevation: 3,
+                    shadowColor: "#000", //ios shadow
+                    shadowOffset: { width: 0, height: 2 },
+                    shadowOpacity: 0.1,
+                    shadowRadius: 2,
+                  }}
+                >
                   <Image
                     source={require("../../assets/google.png")}
                     style={{
                       resizeMode: "center",
-                      height: responsiveHeight(14),
-                      width: responsiveWidth(10),
+                      height: responsiveHeight(6),
+                      width: responsiveWidth(6),
                     }}
                   />
                 </TouchableOpacity>
