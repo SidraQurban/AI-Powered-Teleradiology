@@ -5,7 +5,7 @@ import {
   responsiveHeight,
   responsiveWidth,
 } from "react-native-responsive-dimensions";
-import { Ionicons } from "@expo/vector-icons";
+import { Ionicons, MaterialDesignIcons } from "react-native-vector-icons";
 
 const LoginModal = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -83,6 +83,27 @@ const LoginModal = () => {
                 color="black"
               />
             </TouchableOpacity>
+          </View>
+          {/* remember me */}
+          <View>
+            <View
+              style={{
+                flexDirection: "row",
+                marginTop: responsiveHeight(2),
+                justifyContent: "space-between",
+              }}
+            >
+              <TouchableOpacity>
+                <MaterialDesignIcons
+                  name="checkbox-blank-outline"
+                  size={24}
+                  color="black"
+                />
+              </TouchableOpacity>
+
+              <Text>Remember me</Text>
+              <Text>Forgot Password?</Text>
+            </View>
           </View>
         </View>
       </View>
