@@ -31,7 +31,7 @@ const SignUp = () => {
                 backgroundColor: "white",
               }}
             >
-              <Ionicons name="chevron-back" size={22} color="#e9ecef" />
+              <Ionicons name="chevron-back" size={22} color="#adb5bd" />
             </TouchableOpacity>
           </View>
         </View>

@@ -112,7 +112,19 @@ const SignUpModal = () => {
             <View
               style={{ flexDirection: "row", marginTop: responsiveHeight(1) }}
             >
-              <Text style={{ fontSize: responsiveFontSize(1.6) }}>
+              <MaterialCommunityIcons
+                name={check ? "checkbox-marked" : "checkbox-blank-outline"}
+                size={22}
+                color="#adb5bd"
+                onPress={() => setCheck(!check)}
+              />
+              <Text
+                style={{
+                  fontSize: responsiveFontSize(1.6),
+                  color: "#adb5bd",
+                  marginLeft: responsiveWidth(1),
+                }}
+              >
                 I agree to the
               </Text>
               <Text
