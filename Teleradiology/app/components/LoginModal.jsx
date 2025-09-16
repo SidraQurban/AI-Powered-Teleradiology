@@ -95,6 +95,8 @@ const LoginModal = () => {
             <View
               style={{
                 marginTop: responsiveHeight(2.2),
+                flexDirection: "row",
+                justifyContent: "space-between",
               }}
             >
               <TouchableOpacity>
@@ -105,6 +107,16 @@ const LoginModal = () => {
                   }}
                 >
                   Forgot Password?
+                </Text>
+              </TouchableOpacity>
+              <TouchableOpacity>
+                <Text
+                  style={{
+                    color: "#468faf",
+                    fontSize: responsiveFontSize(1.5),
+                  }}
+                >
+                  Sign Up
                 </Text>
               </TouchableOpacity>
             </View>
