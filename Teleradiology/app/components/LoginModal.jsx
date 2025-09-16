@@ -111,7 +111,7 @@ const LoginModal = () => {
                   Forgot Password?
                 </Text>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={() => navigation.navigate("SignUp")}>
                 <Text
                   style={{
                     color: "#468faf",
