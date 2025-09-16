@@ -38,7 +38,7 @@ const LoginModal = () => {
           {/* Email */}
           <View style={{ marginTop: responsiveHeight(4) }}>
             <Text
-              style={{ fontSize: responsiveFontSize(1.8), fontWeight: "bold" }}
+              style={{ fontSize: responsiveFontSize(1.7), fontWeight: "bold" }}
             >
               Email
             </Text>
