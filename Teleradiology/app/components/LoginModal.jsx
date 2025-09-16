@@ -141,7 +141,7 @@ const LoginModal = () => {
             {/* sign in with */}
             <View>
               <View>
-                <Text></Text>
+                <Text>Or Sign in with</Text>
               </View>
             </View>
           </View>
