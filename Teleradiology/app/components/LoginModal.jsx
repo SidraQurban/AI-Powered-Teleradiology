@@ -127,8 +127,22 @@ const LoginModal = () => {
                   borderRadius: responsiveWidth(5.5),
                 }}
               >
-                <Text>Login</Text>
+                <Text
+                  style={{
+                    fontSize: responsiveFontSize(2),
+                    fontWeight: "bold",
+                    color: "white",
+                  }}
+                >
+                  Login
+                </Text>
               </TouchableOpacity>
+            </View>
+            {/* sign in with */}
+            <View>
+              <View>
+                <Text></Text>
+              </View>
             </View>
           </View>
         </View>
