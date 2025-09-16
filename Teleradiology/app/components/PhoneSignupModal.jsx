@@ -14,6 +14,9 @@ const PhoneSignupModal = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [check, setCheck] = useState(false);
   const navigation = useNavigation();
+  const [countryCode, setCountryCode] = useState("PK");
+  const [callingCode, setCallingCode] = useState("92");
+  const [phoneNumber, setPhoneNumber] = useState("");
   return (
     <View>
       <View
@@ -62,18 +65,48 @@ const PhoneSignupModal = () => {
             >
               Phone Number
             </Text>
-            <TextInput
-              placeholder="+1 234 567 8901"
+            <View
               style={{
+                flexDirection: "row",
+                alignItems: "center",
                 marginTop: responsiveHeight(1),
                 borderWidth: 1,
                 borderColor: "#ced4da",
                 borderRadius: responsiveHeight(2),
-                paddingLeft: responsiveHeight(2),
                 backgroundColor: "#e9ecef",
                 height: responsiveHeight(5.5),
+                paddingHorizontal: responsiveHeight(1),
               }}
-            />
+            >
+              <CountryPicker
+                countryCode={countryCode}
+                withFilter
+                withFlag
+                withCallingCode
+                withEmoji
+                onSelect={(country) => {
+                  setCountryCode(country.cca2);
+                  setCallingCode(country.callingCode[0]);
+                }}
+                containerButtonStyle={{
+                  marginRight: 5,
+                }}
+              />
+              <Text
+                style={{ marginRight: 8, fontSize: responsiveFontSize(1.8) }}
+              >
+                +{callingCode}
+              </Text>
+              <TextInput
+                keyboardType="phone-pad"
+                style={{
+                  flex: 1,
+                  fontSize: responsiveFontSize(1.8),
+                }}
+                value={phoneNumber}
+                onChangeText={setPhoneNumber}
+              />
+            </View>
           </View>
           {/* Password */}
           <View style={{ marginTop: responsiveHeight(2.5) }}>
