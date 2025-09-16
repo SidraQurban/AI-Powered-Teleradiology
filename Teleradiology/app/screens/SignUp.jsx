@@ -1,9 +1,10 @@
-import { View, Text } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { responsiveHeight } from "react-native-responsive-dimensions";
 import SignUpModal from "../components/SignUpModal";
 import { useNavigation } from "@react-navigation/native";
+import { Ionicons } from "@expo/vector-icons";
 
 const SignUp = () => {
   const navigation = useNavigation();
@@ -15,9 +16,28 @@ const SignUp = () => {
           backgroundColor: "#e9ecef",
         }}
       >
+        <View>
+          {/* Header */}
+
+          <View style={{ margin: responsiveHeight(1) }}>
+            <TouchableOpacity
+              onPress={() => navigation.goBack()}
+              style={{
+                height: responsiveHeight(5),
+                width: responsiveHeight(5),
+                borderRadius: responsiveHeight(3),
+                justifyContent: "center",
+                alignItems: "center",
+                backgroundColor: "white",
+              }}
+            >
+              <Ionicons name="chevron-back" size={22} color="#e9ecef" />
+            </TouchableOpacity>
+          </View>
+        </View>
         <View
           style={{
-            marginTop: responsiveHeight(2),
+            marginTop: responsiveHeight(-4),
             alignItems: "center",
           }}
         >
