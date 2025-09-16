@@ -1,13 +1,10 @@
-import { View, Text, TextInput, TouchableOpacity } from "react-native";
-import React, { useState } from "react";
-import {
-  responsiveFontSize,
-  responsiveHeight,
-  responsiveWidth,
-} from "react-native-responsive-dimensions";
-import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
-import { Image } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
+import React from "react";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { responsiveHeight } from "react-native-responsive-dimensions";
+import SignUpModal from "../components/SignUpModal";
 import { useNavigation } from "@react-navigation/native";
+import { Ionicons } from "@expo/vector-icons";
 
 const PhoneSignup = () => {
   return (
