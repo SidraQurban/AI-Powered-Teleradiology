@@ -39,7 +39,7 @@ const WelcomeScreen = () => {
               padding: responsiveHeight(1.5),
               paddingHorizontal: responsiveWidth(25),
               backgroundColor: "#00b4d8",
-              borderRadius: responsiveWidth(2.5),
+              borderRadius: responsiveWidth(5.5),
             }}
           >
             <Text
