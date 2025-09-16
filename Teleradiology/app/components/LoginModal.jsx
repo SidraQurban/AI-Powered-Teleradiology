@@ -13,7 +13,6 @@ import { Image } from "react-native";
 const LoginModal = () => {
   const navigation = useNavigation();
   const [showPassword, setShowPassword] = useState(false);
-  const [check, setCheck] = useState(false);
   return (
     <View>
       <View
@@ -93,7 +92,7 @@ const LoginModal = () => {
               />
             </TouchableOpacity>
           </View>
-          {/* remember me */}
+          {/* forgot */}
           <View>
             <View
               style={{
