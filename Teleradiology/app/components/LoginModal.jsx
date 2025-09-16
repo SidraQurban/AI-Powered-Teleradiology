@@ -162,7 +162,7 @@ const LoginModal = () => {
               >
                 <TouchableOpacity
                   style={{
-                    backgroundColor: "white",
+                    backgroundColor: "#e9ecef",
                     borderRadius: responsiveHeight(2),
                     padding: responsiveWidth(0.8),
                     marginHorizontal: responsiveWidth(2),
@@ -180,15 +180,16 @@ const LoginModal = () => {
                   <Image
                     source={require("../../assets/facebook.png")}
                     style={{
-                      height: responsiveHeight(5),
-                      width: responsiveHeight(5),
+                      height: responsiveHeight(5.2),
+                      width: responsiveHeight(5.2),
                       resizeMode: "contain",
+                      marginTop: responsiveHeight(0.5),
                     }}
                   />
                 </TouchableOpacity>
                 <TouchableOpacity
                   style={{
-                    backgroundColor: "white",
+                    backgroundColor: "#e9ecef",
                     borderRadius: responsiveHeight(2),
                     padding: responsiveWidth(0.8),
                     marginHorizontal: responsiveWidth(2),
