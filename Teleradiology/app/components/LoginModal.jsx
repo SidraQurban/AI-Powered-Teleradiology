@@ -57,6 +57,26 @@ const LoginModal = () => {
               }}
             />
           </View>
+          {/* phone number */}
+          <View style={{ marginTop: responsiveHeight(4) }}>
+            <Text
+              style={{ fontSize: responsiveFontSize(1.7), fontWeight: "bold" }}
+            >
+              Email
+            </Text>
+            <TextInput
+              placeholder="abc@gmail.com"
+              style={{
+                marginTop: responsiveHeight(1),
+                borderWidth: 1,
+                borderColor: "#ced4da",
+                borderRadius: responsiveHeight(2),
+                paddingLeft: responsiveHeight(2),
+                backgroundColor: "#e9ecef",
+                height: responsiveHeight(5.5),
+              }}
+            />
+          </View>
           {/* Password */}
           <View style={{ marginTop: responsiveHeight(2.5) }}>
             <Text
