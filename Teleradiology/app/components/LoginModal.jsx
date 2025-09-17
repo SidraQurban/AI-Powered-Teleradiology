@@ -168,7 +168,7 @@ const LoginModal = () => {
             {/* sign in with */}
             <View>
               <View
-                style={{ alignItems: "center", marginTop: responsiveHeight(3) }}
+                style={{ alignItems: "center", marginTop: responsiveHeight(5) }}
               >
                 <Text>Or Sign in with</Text>
               </View>
