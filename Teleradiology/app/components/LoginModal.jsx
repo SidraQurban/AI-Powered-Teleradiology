@@ -17,9 +17,9 @@ const LoginModal = () => {
     <View>
       <View
         style={{
-          marginTop: responsiveHeight(15.6),
+          marginTop: responsiveHeight(13),
           backgroundColor: "white",
-          height: responsiveHeight(75),
+          height: responsiveHeight(78),
           borderRadius: responsiveHeight(5),
           marginHorizontal: responsiveHeight(2),
         }}
