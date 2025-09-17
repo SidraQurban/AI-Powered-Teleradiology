@@ -24,7 +24,7 @@ const LoginModal = () => {
           marginHorizontal: responsiveHeight(2),
         }}
       >
-        <View style={{ marginTop: responsiveHeight(3), alignItems: "center" }}>
+        <View style={{ marginTop: responsiveHeight(2), alignItems: "center" }}>
           <Text
             style={{ fontSize: responsiveFontSize(2.3), fontWeight: "bold" }}
           >
@@ -38,7 +38,7 @@ const LoginModal = () => {
         </View>
         <View style={{ marginHorizontal: responsiveHeight(2) }}>
           {/* Email */}
-          <View style={{ marginTop: responsiveHeight(4) }}>
+          <View style={{ marginTop: responsiveHeight(2) }}>
             <Text
               style={{ fontSize: responsiveFontSize(1.7), fontWeight: "bold" }}
             >
@@ -58,14 +58,14 @@ const LoginModal = () => {
             />
           </View>
           {/* phone number */}
-          <View style={{ marginTop: responsiveHeight(4) }}>
+          <View style={{ marginTop: responsiveHeight(2.5) }}>
             <Text
               style={{ fontSize: responsiveFontSize(1.7), fontWeight: "bold" }}
             >
-              Email
+              Phone Number
             </Text>
             <TextInput
-              placeholder="abc@gmail.com"
+              placeholder="+92"
               style={{
                 marginTop: responsiveHeight(1),
                 borderWidth: 1,
@@ -116,7 +116,7 @@ const LoginModal = () => {
           <View>
             <View
               style={{
-                marginTop: responsiveHeight(2.2),
+                marginTop: responsiveHeight(1),
                 flexDirection: "row",
                 justifyContent: "space-between",
               }}
@@ -168,7 +168,7 @@ const LoginModal = () => {
             {/* sign in with */}
             <View>
               <View
-                style={{ alignItems: "center", marginTop: responsiveHeight(5) }}
+                style={{ alignItems: "center", marginTop: responsiveHeight(3) }}
               >
                 <Text>Or Sign in with</Text>
               </View>
