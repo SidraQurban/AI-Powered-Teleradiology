@@ -107,16 +107,16 @@ const PhoneSignupModal = () => {
                 value={phoneNumber}
                 onChangeText={setPhoneNumber}
               />
-              {/* <View
-                  style={{
-                    height: responsiveHeight(4),
-                    width: responsiveWidth(0.1),
-                    marginLeft: responsiveWidth(0.1),
-                    backgroundColor: "#6c757d",
-                    position: "absolute",
-                    marginTop: responsiveHeight(0.7),
-                  }}
-                ></View> */}
+              <View
+                style={{
+                  height: responsiveHeight(4),
+                  width: responsiveWidth(0.1),
+                  marginLeft: responsiveWidth(0.1),
+                  backgroundColor: "#6c757d",
+                  position: "absolute",
+                  marginTop: responsiveHeight(0.7),
+                }}
+              ></View>
             </View>
           </View>
           {/* Password */}
