@@ -97,17 +97,17 @@ const PhoneSignupModal = () => {
               >
                 +{callingCode}
               </Text>
-           
-                <TextInput
-                  keyboardType="phone-pad"
-                  style={{
-                    flex: 1,
-                    fontSize: responsiveFontSize(1.8),
-                  }}
-                  value={phoneNumber}
-                  onChangeText={setPhoneNumber}
-                />
-                {/* <View
+
+              <TextInput
+                keyboardType="phone-pad"
+                style={{
+                  flex: 1,
+                  fontSize: responsiveFontSize(1.8),
+                }}
+                value={phoneNumber}
+                onChangeText={setPhoneNumber}
+              />
+              {/* <View
                   style={{
                     height: responsiveHeight(4),
                     width: responsiveWidth(0.1),
@@ -117,7 +117,6 @@ const PhoneSignupModal = () => {
                     marginTop: responsiveHeight(0.7),
                   }}
                 ></View> */}
-              </View>
             </View>
           </View>
           {/* Password */}
