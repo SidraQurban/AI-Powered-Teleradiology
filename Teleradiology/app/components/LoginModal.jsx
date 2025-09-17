@@ -213,6 +213,7 @@ const LoginModal = () => {
                   />
                 </TouchableOpacity>
                 <TouchableOpacity
+                  onPress={() => navigation.navigate("PhoneSignup")}
                   style={{
                     backgroundColor: "#e9ecef",
                     borderRadius: responsiveHeight(2),
