@@ -107,7 +107,7 @@ const PhoneSignupModal = () => {
                   value={phoneNumber}
                   onChangeText={setPhoneNumber}
                 />
-                <Text></Text>
+                <Text style={{}}>|</Text>
               </View>
             </View>
           </View>
