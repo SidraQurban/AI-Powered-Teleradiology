@@ -97,7 +97,7 @@ const PhoneSignupModal = () => {
               >
                 +{callingCode}
               </Text>
-              <View>
+           
                 <TextInput
                   keyboardType="phone-pad"
                   style={{
