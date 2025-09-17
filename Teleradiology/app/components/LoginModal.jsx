@@ -144,7 +144,7 @@ const LoginModal = () => {
             </View>
             {/* login btn */}
             <View
-              style={{ alignItems: "center", marginTop: responsiveHeight(4) }}
+              style={{ alignItems: "center", marginTop: responsiveHeight(3) }}
             >
               <TouchableOpacity
                 style={{
