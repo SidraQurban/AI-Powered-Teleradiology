@@ -114,7 +114,7 @@ const PhoneSignupModal = () => {
                   marginLeft: responsiveWidth(0.1),
                   backgroundColor: "#6c757d",
                   position: "absolute",
-                  marginTop: responsiveHeight(0.7),
+                  marginTop: responsiveHeight(0.5),
                 }}
               ></View>
             </View>
