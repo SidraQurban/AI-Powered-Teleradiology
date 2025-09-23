@@ -10,9 +10,9 @@ import { Image } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
 const SignUpModal = () => {
+  const navigation = useNavigation();
   const [showPassword, setShowPassword] = useState(false);
   const [check, setCheck] = useState(false);
-  const navigation = useNavigation();
 
   return (
     <View>
