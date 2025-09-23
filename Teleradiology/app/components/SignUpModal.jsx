@@ -21,6 +21,7 @@ const SignUpModal = () => {
   const handleSignUp = async () => {
     if (!name || !email || !password) {
       Alert.alert("Error", "Please fill all fields");
+
       return;
     }
 
