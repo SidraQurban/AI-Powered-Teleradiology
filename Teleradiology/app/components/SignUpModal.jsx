@@ -13,8 +13,6 @@ const SignUpModal = () => {
   const navigation = useNavigation();
   const [showPassword, setShowPassword] = useState(false);
   const [check, setCheck] = useState(false);
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
 
   return (
     <View>
