@@ -49,35 +49,7 @@ const SignUpModal = () => {
         }
       );
 
-      const data = await response.json();
-      console.log("API Response:", data);
-
-      if (response.ok) {
-        // ✅ request verify token immediately
-        try {
-          const verifyResponse = await fetch(
-            "https://fyp.publicvm.com/api/v1/auth/request-verify-token",
-            {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({ email: email }),
-            }
-          );
-
-          const verifyData = await verifyResponse.json();
-          console.log("Verify Response:", verifyData);
-
-        
     
-         
-            
-          
-  
-        
-        
-        
-         
-  
 
   return (
     <View>
