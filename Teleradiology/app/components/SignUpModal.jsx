@@ -64,8 +64,6 @@ const SignUpModal = () => {
             </Text>
             <TextInput
               placeholder="JohnDoe@gmail.com"
-              value={email}
-              onChangeText={setEmail}
               keyboardType="email-address"
               autoCapitalize="none"
               style={{
