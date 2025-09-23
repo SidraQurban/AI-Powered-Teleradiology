@@ -81,7 +81,7 @@ const SignUpModal = () => {
           }
         } catch (err) {
           console.error(err);
-          Alert.alert("Error", "Failed to request verification");
+        
         
          
   
