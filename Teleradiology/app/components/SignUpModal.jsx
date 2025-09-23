@@ -80,7 +80,7 @@ const SignUpModal = () => {
             );
           }
         } catch (err) {
-          console.error(err);
+        
         
         
          
