@@ -135,6 +135,8 @@ const SignUpModal = () => {
               Password
             </Text>
             <TextInput
+              value={password}
+              onChangeText={setPassword}
               secureTextEntry={!showPassword}
               placeholder="....."
               style={{
@@ -188,7 +190,7 @@ const SignUpModal = () => {
                 Terms of Service
               </Text>
             </View>
-            {/* login btn */}
+            {/* signup btn */}
             <View
               style={{ alignItems: "center", marginTop: responsiveHeight(4) }}
             >
