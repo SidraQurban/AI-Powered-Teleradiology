@@ -90,6 +90,8 @@ const SignUpModal = () => {
             </Text>
             <TextInput
               placeholder="John Doe"
+              value={name}
+              onChangeText={setName}
               style={{
                 marginTop: responsiveHeight(1),
                 borderWidth: 1,
@@ -110,6 +112,10 @@ const SignUpModal = () => {
             </Text>
             <TextInput
               placeholder="JohnDoe@gmail.com"
+              value={email}
+              onChangeText={setEmail}
+              keyboardType="email-address"
+              autoCapitalize="none"
               style={{
                 marginTop: responsiveHeight(1),
                 borderWidth: 1,
