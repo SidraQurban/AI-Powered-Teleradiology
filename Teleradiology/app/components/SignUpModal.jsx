@@ -34,14 +34,12 @@ const SignUpModal = () => {
         "https://fyp.publicvm.com/api/v1/auth/register",
         {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
+          headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             email: email,
             password: password,
             first_name: name,
-            phone_number: "0000000000", // later you can add real field
+            phone_number: "0000000000",
             is_active: true,
             is_superuser: false,
             is_verified: false,
@@ -54,14 +52,42 @@ const SignUpModal = () => {
       console.log("API Response:", data);
 
       if (response.ok) {
-        Alert.alert("Success", "Account created successfully!");
-        navigation.navigate("Login");
+        // ✅ request verify token immediately
+        try {
+          const verifyResponse = await fetch(
+            "https://fyp.publicvm.com/api/v1/auth/request-verify-token",
+            {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ email: email }),
+            }
+          );
+
+          const verifyData = await verifyResponse.json();
+          console.log("Verify Response:", verifyData);
+
+          if (verifyResponse.ok) {
+            Alert.alert(
+              "Verification",
+              "Check your email to verify your account"
+            );
+            navigation.navigate("Login");
+          } else {
+            Alert.alert(
+              "Error",
+              verifyData.detail || "Failed to send verification"
+            );
+          }
+        } catch (err) {
+          console.error(err);
+          Alert.alert("Error", "Failed to request verification");
+        }
       } else {
         Alert.alert(
           "Error",
           data.detail?.[0]?.msg ||
             data.message ||
-            "User already  exists with this Email address"
+            "User already exists with this Email address"
         );
       }
     } catch (error) {
