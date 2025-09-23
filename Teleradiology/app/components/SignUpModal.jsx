@@ -67,9 +67,7 @@ const SignUpModal = () => {
           const verifyData = await verifyResponse.json();
           console.log("Verify Response:", verifyData);
 
-          if (verifyResponse.ok) {
-            Alert.alert(
-              "Verification",
+        
     
          
             
