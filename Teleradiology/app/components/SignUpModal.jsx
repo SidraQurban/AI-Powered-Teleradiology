@@ -88,7 +88,7 @@ const SignUpModal = () => {
           "Error",
           data.detail?.[0]?.msg ||
             data.message ||
-            "User already exists with this Email addre
+         
   
 
   return (
