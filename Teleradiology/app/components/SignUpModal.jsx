@@ -79,7 +79,7 @@ const SignUpModal = () => {
               verifyData.detail || "Failed to send verification"
             );
           }
-        } catch (err) {
+        } 
         
         
         
