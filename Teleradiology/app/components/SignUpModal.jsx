@@ -70,8 +70,7 @@ const SignUpModal = () => {
           if (verifyResponse.ok) {
             Alert.alert(
               "Verification",
-              "Check your email to verify your account"
-            );
+    
          
             
           
