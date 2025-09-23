@@ -72,8 +72,7 @@ const SignUpModal = () => {
               "Verification",
               "Check your email to verify your account"
             );
-            navigation.navigate("Login");
-          } e
+         
             
           
   
