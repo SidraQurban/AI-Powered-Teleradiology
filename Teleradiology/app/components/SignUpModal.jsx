@@ -17,40 +17,6 @@ const SignUpModal = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  // API call
-  const handleSignUp = async () => {
-    if (!name || !email || !password) {
-      Alert.alert("Error", "Please fill all fields");
-
-      return;
-    }
-
-    if (!check) {
-      Alert.alert("Error", "You must agree to the Terms of Service");
-      return;
-    }
-
-    try {
-      const response = await fetch(
-        "https://fyp.publicvm.com/api/v1/auth/register",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            email: email,
-            password: password,
-            first_name: name,
-            phone_number: "0000000000",
-            is_active: true,
-            is_superuser: false,
-            is_verified: false,
-            registration_type: "email",
-          }),
-        }
-      );
-
-    
-
   return (
     <View>
       <View
