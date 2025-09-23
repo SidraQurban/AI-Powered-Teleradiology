@@ -85,8 +85,6 @@ const SignUpModal = () => {
               Password
             </Text>
             <TextInput
-              value={password}
-              onChangeText={setPassword}
               secureTextEntry={!showPassword}
               placeholder="....."
               style={{
@@ -145,7 +143,6 @@ const SignUpModal = () => {
               style={{ alignItems: "center", marginTop: responsiveHeight(4) }}
             >
               <TouchableOpacity
-                onPress={handleSignUp}
                 style={{
                   padding: responsiveHeight(1.5),
                   paddingHorizontal: responsiveWidth(30),
