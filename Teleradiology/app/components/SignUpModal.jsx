@@ -21,6 +21,11 @@ const SignUpModal = () => {
   const handleSignUp = async () => {
     if (!name || !email || !password) {
       Alert.alert("Error", "Please fill all the fields");
+      return;
+    }
+    if (!check) {
+      Alert.alert("Error", "You must agree to the Terms of Service");
+      return;
     }
   };
   return (
