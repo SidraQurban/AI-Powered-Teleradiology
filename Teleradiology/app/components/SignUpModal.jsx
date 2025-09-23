@@ -76,8 +76,7 @@ const SignUpModal = () => {
           } else {
             Alert.alert(
               "Error",
-              verifyData.detail || "Failed to send verification"
-            );
+          
   
         
         
