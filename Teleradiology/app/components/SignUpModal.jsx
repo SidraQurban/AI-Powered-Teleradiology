@@ -17,17 +17,49 @@ const SignUpModal = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  //API CALL
+  // API call
   const handleSignUp = async () => {
     if (!name || !email || !password) {
-      Alert.alert("Error", "Please fill all the fields");
+      Alert.alert("Error", "Please fill all fields");
       return;
     }
+
     if (!check) {
       Alert.alert("Error", "You must agree to the Terms of Service");
       return;
     }
+
+    try {
+      const response = await fetch(
+        "https://fyp.publicvm.com/api/v1/auth/register",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: name,
+            email: email,
+            password: password,
+          }),
+        }
+      );
+
+      const data = await response.json();
+      console.log("API Response:", data);
+
+      if (response.ok) {
+        Alert.alert("Success", "Account created successfully!");
+        navigation.navigate("Login"); // or wherever you want to go after signup
+      } else {
+        Alert.alert("Error", data.message || "Something went wrong");
+      }
+    } catch (error) {
+      console.error(error);
+      Alert.alert("Error", "Failed to connect to server");
+    }
   };
+
   return (
     <View>
       <View
