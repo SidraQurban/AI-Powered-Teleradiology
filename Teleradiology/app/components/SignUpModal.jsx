@@ -1,4 +1,4 @@
-import { View, Text, TextInput, TouchableOpacity } from "react-native";
+import { View, Text, TextInput, TouchableOpacity, Alert } from "react-native";
 import React, { useState } from "react";
 import {
   responsiveFontSize,
@@ -38,9 +38,14 @@ const SignUpModal = () => {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            name: name,
             email: email,
             password: password,
+            first_name: name,
+            phone_number: "0000000000", // later you can add real field
+            is_active: true,
+            is_superuser: false,
+            is_verified: false,
+            registration_type: "email",
           }),
         }
       );
@@ -50,9 +55,14 @@ const SignUpModal = () => {
 
       if (response.ok) {
         Alert.alert("Success", "Account created successfully!");
-        navigation.navigate("Login"); // or wherever you want to go after signup
+        navigation.navigate("Login");
       } else {
-        Alert.alert("Error", data.message || "Something went wrong");
+        Alert.alert(
+          "Error",
+          data.detail?.[0]?.msg ||
+            data.message ||
+            "User already  exists with this Email address"
+        );
       }
     } catch (error) {
       console.error(error);
@@ -195,6 +205,7 @@ const SignUpModal = () => {
               style={{ alignItems: "center", marginTop: responsiveHeight(4) }}
             >
               <TouchableOpacity
+                onPress={handleSignUp}
                 style={{
                   padding: responsiveHeight(1.5),
                   paddingHorizontal: responsiveWidth(30),
