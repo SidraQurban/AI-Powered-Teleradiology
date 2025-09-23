@@ -44,8 +44,6 @@ const SignUpModal = () => {
             </Text>
             <TextInput
               placeholder="John Doe"
-              value={name}
-              onChangeText={setName}
               style={{
                 marginTop: responsiveHeight(1),
                 borderWidth: 1,
