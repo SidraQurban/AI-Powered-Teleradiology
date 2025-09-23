@@ -91,10 +91,7 @@ const SignUpModal = () => {
             "User already exists with this Email address"
         );
       }
-    } catch (error) {
-      console.error(error);
-      Alert.alert("Error", "Failed to connect to server");
-    }
+    } 
   };
 
   return (
