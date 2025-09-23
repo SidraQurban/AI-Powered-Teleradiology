@@ -90,9 +90,7 @@ const SignUpModal = () => {
             data.message ||
             "User already exists with this Email address"
         );
-      }
-    } 
-  };
+  
 
   return (
     <View>
