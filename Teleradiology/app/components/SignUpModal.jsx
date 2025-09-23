@@ -86,8 +86,7 @@ const SignUpModal = () => {
       } else {
         Alert.alert(
           "Error",
-          data.detail?.[0]?.msg ||
-            data.message ||
+        
          
   
 
