@@ -18,7 +18,11 @@ const SignUpModal = () => {
   const [password, setPassword] = useState("");
 
   //API CALL
-
+  const handleSignUp = async () => {
+    if (!name || !email || !password) {
+      Alert.alert("Error", "Please fill all the fields");
+    }
+  };
   return (
     <View>
       <View
