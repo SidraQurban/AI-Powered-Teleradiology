@@ -75,7 +75,7 @@ const SignUpModal = () => {
             navigation.navigate("Login");
           } else {
             Alert.alert(
-              "Error",
+            
           
   
         
