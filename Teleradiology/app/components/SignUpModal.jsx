@@ -136,7 +136,6 @@ const SignUpModal = () => {
                 style={{ fontSize: responsiveFontSize(1.6), color: "#468faf" }}
               >
                 Terms of Service
-                
               </Text>
             </View>
             {/* signup btn */}
