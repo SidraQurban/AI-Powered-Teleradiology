@@ -266,4 +266,4 @@ const SignUpModal = () => {
 
 export default SignUpModal;
 export default SignUpModal;
-export default Sign
+export default 
