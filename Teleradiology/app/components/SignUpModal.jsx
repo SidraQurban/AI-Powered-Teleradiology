@@ -14,6 +14,7 @@ const SignUpModal = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [check, setCheck] = useState(false);
 
+  const
   return (
     <View>
       <View
