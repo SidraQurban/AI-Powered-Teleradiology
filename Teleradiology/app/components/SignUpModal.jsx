@@ -13,7 +13,7 @@ const SignUpModal = () => {
   const navigation = useNavigation();
   const [showPassword, setShowPassword] = useState(false);
   const [check, setCheck] = useState(false);
-  const [jfhiwu, setha
+  const [jfhiwu, set
   return (
     <View>
       <View
