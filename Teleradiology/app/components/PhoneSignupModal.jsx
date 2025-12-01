@@ -21,9 +21,9 @@ const PhoneSignupModal = () => {
     <View>
       <View
         style={{
-          marginTop: responsiveHeight(10),
+          marginTop: responsiveHeight(7),
           backgroundColor: "white",
-          height: responsiveHeight(80),
+          height: responsiveHeight(75),
           borderRadius: responsiveHeight(5),
           marginHorizontal: responsiveHeight(2),
         }}
@@ -207,33 +207,6 @@ const PhoneSignupModal = () => {
                   marginTop: responsiveHeight(2),
                 }}
               >
-                <TouchableOpacity
-                  style={{
-                    backgroundColor: "#e9ecef",
-                    borderRadius: responsiveHeight(2),
-                    padding: responsiveWidth(0.8),
-                    marginHorizontal: responsiveWidth(2),
-                    width: responsiveHeight(6),
-                    height: responsiveHeight(6),
-                    alignItems: "center",
-                    justifyContent: "center",
-                    elevation: 3,
-                    shadowColor: "#000", //ios shadow
-                    shadowOffset: { width: 0, height: 2 },
-                    shadowOpacity: 0.1,
-                    shadowRadius: 2,
-                  }}
-                >
-                  <Image
-                    source={require("../../assets/facebook.png")}
-                    style={{
-                      height: responsiveHeight(5.2),
-                      width: responsiveHeight(5.2),
-                      resizeMode: "contain",
-                      marginTop: responsiveHeight(0.5),
-                    }}
-                  />
-                </TouchableOpacity>
                 <TouchableOpacity
                   style={{
                     backgroundColor: "#e9ecef",

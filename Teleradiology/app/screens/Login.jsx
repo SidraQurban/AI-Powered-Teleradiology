@@ -6,6 +6,7 @@ import {
   responsiveHeight,
 } from "react-native-responsive-dimensions";
 import LoginModal from "../components/LoginModal";
+import { Image } from "react-native";
 
 const Login = () => {
   return (
@@ -18,11 +19,17 @@ const Login = () => {
       >
         <View
           style={{
-            marginTop: responsiveHeight(2),
             alignItems: "center",
           }}
         >
-          <Text>LOGO</Text>
+          <Image
+            source={require("../../assets/logoapp.png")}
+            style={{
+              height: responsiveHeight(10),
+              width: responsiveHeight(30),
+              resizeMode: "cover",
+            }}
+          />
         </View>
         <LoginModal />
       </View>

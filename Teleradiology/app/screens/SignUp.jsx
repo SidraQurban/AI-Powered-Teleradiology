@@ -5,6 +5,7 @@ import { responsiveHeight } from "react-native-responsive-dimensions";
 import SignUpModal from "../components/SignUpModal";
 import { useNavigation } from "@react-navigation/native";
 import { Ionicons } from "@expo/vector-icons";
+import { Image } from "react-native";
 
 const SignUp = () => {
   const navigation = useNavigation();
@@ -37,11 +38,18 @@ const SignUp = () => {
         </View>
         <View
           style={{
-            marginTop: responsiveHeight(-4),
+            marginTop: responsiveHeight(-7),
             alignItems: "center",
           }}
         >
-          <Text>LOGO</Text>
+          <Image
+            source={require("../../assets/logoapp.png")}
+            style={{
+              height: responsiveHeight(10),
+              width: responsiveHeight(30),
+              resizeMode: "cover",
+            }}
+          />
         </View>
         <SignUpModal />
       </View>

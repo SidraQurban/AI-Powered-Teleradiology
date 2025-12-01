@@ -18,9 +18,9 @@ const SignUpModal = () => {
     <View>
       <View
         style={{
-          marginTop: responsiveHeight(10),
-          backgroundColor: "white",
-          height: responsiveHeight(80),
+          marginTop: responsiveHeight(7),
+          backgroundColor: "#ffffff",
+          height: responsiveHeight(75),
           borderRadius: responsiveHeight(5),
           marginHorizontal: responsiveHeight(2),
         }}
@@ -30,7 +30,11 @@ const SignUpModal = () => {
             style={{ marginTop: responsiveHeight(3), alignItems: "center" }}
           >
             <Text
-              style={{ fontSize: responsiveFontSize(2.3), fontWeight: "bold" }}
+              style={{
+                fontSize: responsiveFontSize(2.3),
+                fontWeight: "bold",
+                color: "#000000",
+              }}
             >
               Create an Account?
             </Text>
@@ -146,7 +150,7 @@ const SignUpModal = () => {
                 style={{
                   padding: responsiveHeight(1.5),
                   paddingHorizontal: responsiveWidth(30),
-                  backgroundColor: "#00b4d8",
+                  backgroundColor: "#00B4D8",
                   borderRadius: responsiveWidth(5.5),
                 }}
               >
@@ -175,33 +179,6 @@ const SignUpModal = () => {
                   marginTop: responsiveHeight(2),
                 }}
               >
-                <TouchableOpacity
-                  style={{
-                    backgroundColor: "#e9ecef",
-                    borderRadius: responsiveHeight(2),
-                    padding: responsiveWidth(0.8),
-                    marginHorizontal: responsiveWidth(2),
-                    width: responsiveHeight(6),
-                    height: responsiveHeight(6),
-                    alignItems: "center",
-                    justifyContent: "center",
-                    elevation: 3,
-                    shadowColor: "#000", //ios shadow
-                    shadowOffset: { width: 0, height: 2 },
-                    shadowOpacity: 0.1,
-                    shadowRadius: 2,
-                  }}
-                >
-                  <Image
-                    source={require("../../assets/facebook.png")}
-                    style={{
-                      height: responsiveHeight(5.2),
-                      width: responsiveHeight(5.2),
-                      resizeMode: "contain",
-                      marginTop: responsiveHeight(0.5),
-                    }}
-                  />
-                </TouchableOpacity>
                 <TouchableOpacity
                   style={{
                     backgroundColor: "#e9ecef",

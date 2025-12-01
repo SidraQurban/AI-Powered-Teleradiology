@@ -17,9 +17,9 @@ const LoginModal = () => {
     <View>
       <View
         style={{
-          marginTop: responsiveHeight(13),
+          marginTop: responsiveHeight(7),
           backgroundColor: "white",
-          height: responsiveHeight(78),
+          height: responsiveHeight(75),
           borderRadius: responsiveHeight(5),
           marginHorizontal: responsiveHeight(2),
         }}
@@ -28,17 +28,12 @@ const LoginModal = () => {
           <Text
             style={{ fontSize: responsiveFontSize(2.3), fontWeight: "bold" }}
           >
-            Welcome to
-          </Text>
-          <Text
-            style={{ fontSize: responsiveFontSize(2.3), fontWeight: "bold" }}
-          >
-            TeleRadiology login now!
+            Login Now!
           </Text>
         </View>
         <View style={{ marginHorizontal: responsiveHeight(2) }}>
           {/* Email */}
-          <View style={{ marginTop: responsiveHeight(2) }}>
+          <View style={{ marginTop: responsiveHeight(5) }}>
             <Text
               style={{ fontSize: responsiveFontSize(1.7), fontWeight: "bold" }}
             >
@@ -57,28 +52,8 @@ const LoginModal = () => {
               }}
             />
           </View>
-          {/* phone number */}
-          <View style={{ marginTop: responsiveHeight(2.5) }}>
-            <Text
-              style={{ fontSize: responsiveFontSize(1.7), fontWeight: "bold" }}
-            >
-              Phone Number
-            </Text>
-            <TextInput
-              placeholder="+92"
-              style={{
-                marginTop: responsiveHeight(1),
-                borderWidth: 1,
-                borderColor: "#ced4da",
-                borderRadius: responsiveHeight(2),
-                paddingLeft: responsiveHeight(2),
-                backgroundColor: "#e9ecef",
-                height: responsiveHeight(5.5),
-              }}
-            />
-          </View>
           {/* Password */}
-          <View style={{ marginTop: responsiveHeight(2.5) }}>
+          <View style={{ marginTop: responsiveHeight(4) }}>
             <Text
               style={{ fontSize: responsiveFontSize(1.7), fontWeight: "bold" }}
             >
@@ -147,6 +122,7 @@ const LoginModal = () => {
               style={{ alignItems: "center", marginTop: responsiveHeight(3) }}
             >
               <TouchableOpacity
+                onPress={() => navigation.navigate("Home")}
                 style={{
                   padding: responsiveHeight(1.5),
                   paddingHorizontal: responsiveWidth(30),
@@ -179,33 +155,6 @@ const LoginModal = () => {
                   marginTop: responsiveHeight(2),
                 }}
               >
-                <TouchableOpacity
-                  style={{
-                    backgroundColor: "#e9ecef",
-                    borderRadius: responsiveHeight(2),
-                    padding: responsiveWidth(0.8),
-                    marginHorizontal: responsiveWidth(2),
-                    width: responsiveHeight(6),
-                    height: responsiveHeight(6),
-                    alignItems: "center",
-                    justifyContent: "center",
-                    elevation: 3,
-                    shadowColor: "#000", //ios shadow
-                    shadowOffset: { width: 0, height: 2 },
-                    shadowOpacity: 0.1,
-                    shadowRadius: 2,
-                  }}
-                >
-                  <Image
-                    source={require("../../assets/facebook.png")}
-                    style={{
-                      height: responsiveHeight(5.2),
-                      width: responsiveHeight(5.2),
-                      resizeMode: "contain",
-                      marginTop: responsiveHeight(0.5),
-                    }}
-                  />
-                </TouchableOpacity>
                 <TouchableOpacity
                   style={{
                     backgroundColor: "#e9ecef",
